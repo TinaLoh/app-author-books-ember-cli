@@ -1,0 +1,16 @@
+<h1>Reviews</h1>
+
+<ul>
+
+
+{{#each review in model}}
+
+<li>{{review.rating}}</li>
+<li>{{review.text}}</li>
+
+{{/each}}
+</ul>
+
+
+<h1>Average Rating: {{averageRating}}</h1>
+{{outlet}}
